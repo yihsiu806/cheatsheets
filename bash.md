@@ -27,14 +27,14 @@ fg       # foreground
 ```
 
 ### Read line from STDIN
-```
+```bash
 while IFS= read -r line; do
     echo $line
 done < /dev/stdin
 ```
 
 ### Read line from file
-```
+```bash
 while IFS= read -r line; do
     echo $line
 done < filename
@@ -69,6 +69,6 @@ fi
 ```
 
 # Reference
-# 1. https://devhints.io/bash
-# 2. https://learnxinyminutes.com/docs/bash/
-# 3. https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/bash.sh
+1. https://devhints.io/bash
+2. https://learnxinyminutes.com/docs/bash/
+3. https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/bash.sh
