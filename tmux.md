@@ -43,7 +43,14 @@ tmux kill-session -t name     # Kill session
 <pfreix> + x                  # Kill pane
 ```
 
+## Reloading Config
+```
+tmux source-file ~/.tmux.conf
+:source-file ~/.tmux.conf
+```
+
 ## Reference
 https://www.hostinger.com/tutorials/tmux-beginners-guide-and-cheat-sheet/
 https://www.shortcutfoo.com/app/dojos/tmux/cheatsheet
 https://tmuxcheatsheet.com/
+https://sanctum.geek.nz/arabesque/reloading-tmux-config/
