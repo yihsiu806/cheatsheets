@@ -1,29 +1,26 @@
-
-
-
 # Shortcuts
 ```
-Ctrl + A # 移動到行首，同 <Home>
-Ctrl + E # 移動到行末，同 <End>
-Alt  + B # Backward a word
-Alt  + F # Forward a word
-Ctrl + U # Delete all characters before cursor
-Ctrl + K # Delete all characters after cursor
-Ctrl + W # Delete word before cursor
-Alt  + D # Delete word after cursor
-Alt  + T # Swap words before cursor
-Ctrl + Y # Paste deleted content
-Ctrl + P # Scroll up through history
-Ctrl + N # Scroll down through history
-Crtl + R # Reverse search
-Ctrl + P # Forward search
-Ctrl + G # Exit search
+Ctrl + A              # 移動到行首，同 <Home>
+Ctrl + E              # 移動到行末，同 <End>
+Alt  + B              # Backward a word
+Alt  + F              # Forward a word
+Ctrl + U              # Delete all characters before cursor
+Ctrl + K              # Delete all characters after cursor
+Ctrl + W              # Delete word before cursor
+Alt  + D              # Delete word after cursor
+Alt  + T              # Swap words before cursor
+Ctrl + Y              # Paste deleted content
+Ctrl + P              # Scroll up through history
+Ctrl + N              # Scroll down through history
+Crtl + R              # Reverse search
+Ctrl + P              # Forward search
+Ctrl + G              # Exit search
 ```
 
 # Process
 ```
-Ctrl + Z # background
-fg       # foreground
+Ctrl + Z              # background
+fg                    # foreground
 ```
 
 ### Read line from STDIN
