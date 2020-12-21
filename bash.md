@@ -19,16 +19,24 @@ Ctrl + P              # Forward search
 Ctrl + G              # Exit search
 ```
 
+<<<<<<< HEAD
 ## parameter
 
 `$#` number of parameter
 `$*` "$1 $2 $3 $4"
 `$@` "$1" "$2" "$3" "$4"
 
+=======
+>>>>>>> Add python cheatsheet
 ## Process
 ```
 Ctrl + Z              # background
 fg                    # foreground
+```
+
+## Execute
+```
+#!/usr/bin/env bash
 ```
 
 ### Read line from STDIN
@@ -73,7 +81,7 @@ else
 fi
 ```
 
-# Reference
+## Reference
 1. https://devhints.io/bash
 2. https://learnxinyminutes.com/docs/bash/
 3. https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/bash.sh
