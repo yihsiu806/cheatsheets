@@ -1,4 +1,6 @@
-# Shortcuts
+# Bash Cheatsheet
+
+## Shortcuts
 ```
 Ctrl + A              # 移動到行首，同 <Home>
 Ctrl + E              # 移動到行末，同 <End>
