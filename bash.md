@@ -19,7 +19,13 @@ Ctrl + P              # Forward search
 Ctrl + G              # Exit search
 ```
 
-# Process
+## parameter
+
+`$#` number of parameter
+`$*` "$1 $2 $3 $4"
+`$@` "$1" "$2" "$3" "$4"
+
+## Process
 ```
 Ctrl + Z              # background
 fg                    # foreground
