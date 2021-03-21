@@ -1,6 +1,6 @@
 # Bash Cheatsheet
 
-## Shortcuts
+### Shortcuts
 ```
 Ctrl + A              # 移動到行首，同 <Home>
 Ctrl + E              # 移動到行末，同 <End>
@@ -19,24 +19,41 @@ Ctrl + P              # Forward search
 Ctrl + G              # Exit search
 ```
 
-<<<<<<< HEAD
 ## parameter
 
 `$#` number of parameter
 `$*` "$1 $2 $3 $4"
 `$@` "$1" "$2" "$3" "$4"
 
-=======
->>>>>>> Add python cheatsheet
+### Variable
+```
+var=something
+echo $var
+```
+
+### Parameter expansion ${}
+```
+echo ${var}
+echo ${var/old/new}
+echo ${#var}
+echo ${var:0:4}
+```
+
 ## Process
 ```
 Ctrl + Z              # background
 fg                    # foreground
 ```
 
-## Execute
+### Execute
 ```
 #!/usr/bin/env bash
+```
+
+### Download and Execute Script
+```
+curl -fsSL https://get.yihsiu.io -o get-nodejs.sh
+sudo sh get-nodejs.sh
 ```
 
 ### Read line from STDIN
