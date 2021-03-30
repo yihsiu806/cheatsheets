@@ -1,6 +1,6 @@
 # Bash Cheatsheet
 
-### Shortcuts
+## Shortcuts
 ```
 Ctrl + A              # 移動到行首，同 <Home>
 Ctrl + E              # 移動到行末，同 <End>
@@ -19,19 +19,24 @@ Ctrl + P              # Forward search
 Ctrl + G              # Exit search
 ```
 
+
 ## parameter
 
 `$#` number of parameter
 `$*` "$1 $2 $3 $4"
 `$@` "$1" "$2" "$3" "$4"
 
-### Variable
+
+## Variable
+
 ```
 var=something
 echo $var
+unset var
 ```
 
-### Parameter expansion ${}
+## Parameter expansion ${}
+
 ```
 echo ${var}
 echo ${var/old/new}
@@ -39,38 +44,64 @@ echo ${#var}
 echo ${var:0:4}
 ```
 
+## Command
+
+```
+`command`
+
+$(command)
+```
+
+## Environment Variable
+
+```
+env
+set
+declare
+```
+
 ## Process
+
 ```
 Ctrl + Z              # background
 fg                    # foreground
 ```
 
-### Execute
+## Execute
+
 ```
 #!/usr/bin/env bash
 ```
 
-### Download and Execute Script
+## Download and Execute Script
+
 ```
 curl -fsSL https://get.yihsiu.io -o get-nodejs.sh
 sudo sh get-nodejs.sh
 ```
 
-### Read line from STDIN
+```
+ wget -qO- https://raw.githubusercontent.com/yihsiu806/utility/master/get-nodejs.sh | sh
+```
+
+## Read line from STDIN
+
 ```bash
 while IFS= read -r line; do
     echo $line
 done < /dev/stdin
 ```
 
-### Read line from file
+## Read line from file
+
 ```bash
 while IFS= read -r line; do
     echo $line
 done < filename
 ```
 
-### Test Connectivity
+## Test Connectivity
+
 ```bash
 if ping -q -c 1 -W 1 ${IP} > /dev/null; then
     logger -t ${TAG} ping ${IP} success!
@@ -79,7 +110,8 @@ else
 fi
 ```
 
-### Check Root Privilege
+## Check Root Privilege
+
 ```bash
 if [ $EUID -eq 0 ]; then
     echo "User has root privilege."
@@ -88,7 +120,8 @@ else
 fi
 ```
 
-### Check Command Exist
+## Check Command Exist
+
 ```bash
 cmd=curl
 if type "$cmd" &> /dev/null; then
@@ -97,6 +130,23 @@ else
     echo "Command \"$cmd\" not found"
 fi
 ```
+
+## Check Line Number
+
+```bash
+files=$(ls)
+
+for file in $files
+do
+    lines=$(cat $file | wc -l)
+    #echo $file : $lines
+    if [ $lines -gt 32 ]
+    then
+        echo $v too big!!
+    fi
+done
+```
+
 
 ## Reference
 1. https://devhints.io/bash
