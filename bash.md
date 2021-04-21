@@ -84,6 +84,10 @@ sudo sh get-nodejs.sh
  wget -qO- https://raw.githubusercontent.com/yihsiu806/utility/master/get-nodejs.sh | sh
 ```
 
+```
+curl https://cli-assets.heroku.com/install.sh | sh
+```
+
 ## Read line from STDIN
 
 ```bash
